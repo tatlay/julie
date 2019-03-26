@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import StartScreen from "../startScreen";
 import GoalScreen from "../GoalScreen";
-import "./styles/main.css";
+import "../../styles/main.css";
 
 const App = () => (
     <Router>
