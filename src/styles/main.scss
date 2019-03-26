@@ -1,3 +1,6 @@
-*{
-	background-color: hotpink;
-}
+@import 'scss/media_queries.scss';
+@import 'scss/fonts.scss';
+@import 'scss/buttons.scss';
+@import 'scss/variables.scss';
+@import 'scss/grid.scss';
+@import 'scss/general_styling.scss';
