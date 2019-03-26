@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["main.scss"],"names":[],"mappings":"AAAA;EACC","file":"main.css"}
+{"version":3,"sourceRoot":"","sources":["scss/fonts.scss","scss/general_styling.scss"],"names":[],"mappings":"AAAA;EACC;;;ACDD;EACC","file":"main.css"}

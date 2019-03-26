@@ -1,5 +1,9 @@
-* {
-  background-color: hotpink;
+h1 {
+  font-family: "Helvetica";
+}
+
+button {
+  background-color: #FF3A33;
 }
 
 /*# sourceMappingURL=main.css.map */
