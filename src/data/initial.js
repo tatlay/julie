@@ -1,4 +1,5 @@
 const initial = {
+    loaded: false,
     exerciseFocus: "Legs",
     goal: "endurance",
     workoutTimeMins: 40,
