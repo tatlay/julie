@@ -1,7 +1,7 @@
 import { connect } from "react-redux";
 import App from "./App";
 
-const mapStateToProps = ({ counter, step }) => ({});
+const mapStateToProps = ({}) => ({});
 
 const mapDispatchToProps = (dispatch) => ({});
 

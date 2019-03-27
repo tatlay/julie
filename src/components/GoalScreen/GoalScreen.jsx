@@ -1,5 +1,16 @@
-import React from "react";
+import React, {Fragment} from "react";
+import { Link } from "react-router-dom";
 
-const GoalScreen = () => <h3>This is the goal selection screen</h3>;
+import Button from "../Button";
 
-export default GoalScreen;
+const StartScreen = () => (
+    <Fragment>
+        <h3>This is the goal selection screen</h3>
+        <Link to="/time-muscles-screen">
+            <Button>Next</Button>
+        </Link>
+    </Fragment>
+   
+);
+
+export default StartScreen;
