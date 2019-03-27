@@ -18,6 +18,7 @@ class TimeMuscleScreen extends Component {
 
 		this.handleMuscleChange = this.handleMuscleChange.bind(this);
 		this.handleTimeChange = this.handleTimeChange.bind(this);
+		this.handleGoalChange = this.handleGoalChange.bind(this);
 		
 	}//end of constructor
 
@@ -54,6 +55,10 @@ class TimeMuscleScreen extends Component {
 		}
 	}
 
+	handleGoalChange(e) {
+		this.setState({ goal : e.currentTarget.value })
+	}
+
 
 	render() {
 
@@ -72,13 +77,13 @@ class TimeMuscleScreen extends Component {
 					</div>
 				
 					<div>
-						<input id="strength" type="radio" name="goal" value="strength" />
+						<input onChange={ this.handleGoalChange } id="strength" type="radio" name="goal" value="strength" />
 						<label>Strength</label>
 					
-						<input id="size" type="radio" name="goal" value="size" />
+						<input onChange={ this.handleGoalChange } id="size" type="radio" name="goal" value="size" />
 						<label>Size</label>
 					
-						<input id="endurance" type="radio" name="goal" value="endurance" />
+						<input onChange={ this.handleGoalChange } id="endurance" type="radio" name="goal" value="endurance" />
 						<label>Endurance</label>
 					</div>
 
@@ -87,17 +92,17 @@ class TimeMuscleScreen extends Component {
 
 					<div>
 						<input onChange={ this.handleMuscleChange } type="checkbox" name="MuscleGroup" id="Back" />
-						<label for="Back">Back</label>
+						<label htmlFor="Back">Back</label>
 						<input onChange={ this.handleMuscleChange } type="checkbox" name="MuscleGroup" id="Shoulders" />
-						<label for="Shoulders">Shoulders</label>
+						<label htmlFor="Shoulders">Shoulders</label>
 						<input onChange={ this.handleMuscleChange } type="checkbox" name="MuscleGroup" id="Biceps" />
-						<label for="Biceps">Biceps</label>
+						<label htmlFor="Biceps">Biceps</label>
 						<input onChange={ this.handleMuscleChange } type="checkbox" name="MuscleGroup" id="Triceps" />
-						<label for="Triceps">Triceps</label>
+						<label htmlFor="Triceps">Triceps</label>
 						<input onChange={ this.handleMuscleChange } type="checkbox" name="MuscleGroup" id="Chest" />
-						<label for="Chest">Chest</label>
+						<label htmlFor="Chest">Chest</label>
 						<input onChange={ this.handleMuscleChange } type="checkbox" name="MuscleGroup"  id="Legs" />
-						<label for="Legs">Legs</label>
+						<label htmlFor="Legs">Legs</label>
 					</div>
 				</form>
 
