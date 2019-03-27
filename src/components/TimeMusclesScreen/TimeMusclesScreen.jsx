@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 class TimeMuscleScreen extends Component {
 
@@ -110,6 +111,9 @@ class TimeMuscleScreen extends Component {
 					onClick={ () => this.props.onSubmit(this.state) }>
 
 				Submit</button> 
+
+				<Link to="/workout-sheet-screen"><button>Workout</button></Link>
+
 
 			</React.Fragment>
 		)
