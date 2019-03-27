@@ -23,12 +23,14 @@ const createExerciseArray = (data) => {
 
 
 export const getExercisePlan = (data) => (dispatch, getState) => {
-	/*
+	
 	let mgroup = createExerciseArray(data);
 
 	console.log(mgroup);
 	console.log(data.timeForWorkout);
 	console.log(data.goal);
+
+	/*
 
 	
 	
