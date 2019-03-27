@@ -64,31 +64,38 @@ class TimeMuscleScreen extends Component {
 
 			<React.Fragment>
 
-				<h1>Workout with Julie</h1>
+				<h1 className="timemusclescreen__title">Workout with Julie</h1>
 
-				<form>
+				<form className="timemusclescreen__form">
 
-					<h3>How much time do you have for your workout?</h3>
 
-					<div>
-						<input onChange={ this.handleTimeChange } type="number" name="time" id="time"  />
+					<div className="timemusclescreen__time">
+
+					<h3>Workout Time</h3>
+
+						<input className="timemusclescreen_mins" onChange={ this.handleTimeChange } type="number" name="time" id="time"/>
 					</div>
-				
-					<div>
+
+				<div className="timemusclescreen_divide"></div>	
+
+				<h3 className="timemusclescreen__goal">What is your goal for this workout?</h3>
+					<div className="timemusclescreen__radio">
 						<input onChange={ this.handleGoalChange } id="strength" type="radio" name="goal" value="strength" />
+
 						<label>Strength</label>
 					
 						<input onChange={ this.handleGoalChange } id="size" type="radio" name="goal" value="size" />
 						<label>Size</label>
 					
 						<input onChange={ this.handleGoalChange } id="endurance" type="radio" name="goal" value="endurance" />
-						<label>Endurance</label>
+
+						<label className="timemusclescreen__endurance">Endurance</label>
 					</div>
 
 
-					<h3>Which areas would you like to work out?</h3>
+					<h3 className="timemusclescreen__areas">Which areas would you like to work out?</h3>
 
-					<div>
+					<div className="timemusclescreen__checkbox">
 						<input onChange={ this.handleMuscleChange } type="checkbox" name="MuscleGroup" id="Back" checked={this.state.back} />
 						<label htmlFor="Back">Back</label>
 						<input onChange={ this.handleMuscleChange } type="checkbox" name="MuscleGroup" id="Shoulders" checked={this.state.shoulders} />
@@ -101,6 +108,7 @@ class TimeMuscleScreen extends Component {
 						<label htmlFor="Chest">Chest</label>
 						<input onChange={ this.handleMuscleChange } type="checkbox" name="MuscleGroup"  id="Legs" checked={this.state.legs} />
 						<label htmlFor="Legs">Legs</label>
+
 					</div>
 				</form>
 
