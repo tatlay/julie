@@ -13,6 +13,7 @@ class TimeMuscleScreen extends Component {
 			shoulders : false,
 			legs : false,
 			timeForWorkout : 0,
+			goal: "",
 		} 
 
 		this.handleMuscleChange = this.handleMuscleChange.bind(this);
@@ -69,9 +70,18 @@ class TimeMuscleScreen extends Component {
 					<div>
 						<input onChange={ this.handleTimeChange } type="number" name="time" id="time"  />
 					</div>
-				</form>
+				
+					<div>
+						<input id="strength" type="radio" name="goal" value="strength" />
+						<label>Strength</label>
+					
+						<input id="size" type="radio" name="goal" value="size" />
+						<label>Size</label>
+					
+						<input id="endurance" type="radio" name="goal" value="endurance" />
+						<label>Endurance</label>
+					</div>
 
-				<form> 
 
 					<h3>Which areas would you like to work out?</h3>
 
