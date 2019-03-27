@@ -23,11 +23,14 @@ const createExerciseArray = (data) => {
 
 
 export const getExercisePlan = (data) => (dispatch, getState) => {
+	/*
 	let mgroup = createExerciseArray(data);
 
 	console.log(mgroup);
 	console.log(data.timeForWorkout);
 	console.log(data.goal);
+
+	
 	
 
 	// make an api call sending off the data (in the format that the api is expecting)
@@ -37,7 +40,9 @@ export const getExercisePlan = (data) => (dispatch, getState) => {
 		goal: data.goal,
 	})
 		.then( response => exerciseDetails(dummyResponse)) //dispatching stateAction here.
-		.catch( error => console.log(error))
+		.catch( error => console.log(error)) */
+
+		dispatch(exerciseDetails(dummyResponse));
 
 
 	// on success, pass the response to the state (exercise)
