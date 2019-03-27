@@ -72,6 +72,8 @@ class TimeMuscleScreen extends Component {
 
 						<input className="timemusclescreen_mins" onChange={ this.handleTimeChange } type="number" name="time" id="time"/>
 					</div>
+				<div className="timemusclescreen_divide"></div>	
+
 				<h3 className="timemusclescreen__goal">What is your goal for this workout?</h3>
 					<div className="timemusclescreen__radio">
 						<input id="strength" type="radio" name="goal" value="strength" />
