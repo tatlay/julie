@@ -14,7 +14,13 @@ button{
 	}
 
 	&:active {
-		background-color: black;
+		background-color: #1CFF49;
 	}
 
+}
+
+.goalscreen__next{
+	display: flex;
+  	justify-content: right;
+  	align-items: right;
 }
