@@ -41,4 +41,3 @@ export const getExercisePlan = (data) => (dispatch, getState) => {
 	// on success, pass the response to the state (exercise)
 	// on failure notify the user that something is wrong (console.log....error message system)
 }
-
