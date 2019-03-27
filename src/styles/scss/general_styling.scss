@@ -3,7 +3,6 @@ html{
 }
 	
 body{
-	height: 100%;
 	background-size: cover;
 	background-position: top center;
 	background-repeat: no-repeat;
@@ -14,7 +13,7 @@ body{
 }
 
 .startscreen__background{
-	height: 112vh;
+	height: 100vh;
 	width: 46vh;
 	display: flex;
 	justify-content: center;
@@ -26,3 +25,10 @@ a{
 }
 
 
+.timemusclescreen_mins{
+	width: 40px;
+	height: 40px;
+	position: relative;
+	font-size: 33px;
+
+}

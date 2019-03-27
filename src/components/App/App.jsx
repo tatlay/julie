@@ -9,7 +9,6 @@ import "../../styles/main.css";
 const App = () => (
     <Router>
         <Fragment>
-            <h1>Julie</h1>
             <Switch>
                 <Route exact path="/" component={StartScreen} />
                 <Route exact path="/goal-screen" component={GoalScreen} />
