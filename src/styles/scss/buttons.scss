@@ -6,10 +6,15 @@ button{
 	width: 150px;
 	height: 50px;
 	color: white;
+	position: relative;	
+	top: 100px;
 
 	&:hover {
 		background-color: #1CFF49;
 	}
 
-}
+	&:active {
+		background-color: black;
+	}
 
+}

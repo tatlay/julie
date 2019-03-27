@@ -1,166 +1,19 @@
-// @media (max-width: 842px){
-// 	*{
-// 		background-color: black;
-// 	}
-
-// 	body {
-// 	background-image: url("../../../images/background_home.jpg");
-// 	}
-// }
-
-// @media (min-width: 410px){
-
-// 	*	{
-
-// 		background-image: url("images/414x736.jpg");		
-// 	}
-// }
-// @media (min-width: 412px){
-
-// 	*	{
-// 		background-image: url("images/414x736.jpg");		
-// 		background-position: 25% 75%;
-// 	}
-// }
-
-
-// @media (min-width: 374px){
-
-// 	*	{
-// 		background-image: url("images/375x812.jpg");
-// 	}
-// }
-
-
 @media (max-width: 414px){ //iphone 6/7/8/xs/
-	html{
-		height: 100%;
-	}
-
-	body{
+	.startscreen__background{
 		background-image: url("images/375x812.jpg");
-		background-size: cover;
-		background-position: top center;
-		background-repeat: no-repeat;
-		height: 100%;
-		background-color: unset !important;
-		padding: 10em;
-		display: flex;
-  		justify-content: center;
- 		align-items: center;
 	}
-
-	h1{
-		display: flex;
-	  	justify-content: center;
-	  	align-items: center;
-	}
-
-	button{
-		position: relative;	
-		top: 100px;
-	}
-
-
 }
 
 @media (max-width: 1024px){ //ipad / pro
-	html{
-		height: 100%;
-	}
-
-	body{
+	.startscreen__background{
 		background-image: url("images/375x812.jpg");
-		background-size: cover;
-		background-position: top center;
-		background-repeat: no-repeat;
-		height: 100%;
-		background-color: unset !important;
-		padding: 10em;
-		display: flex;
-  		justify-content: center;
- 		align-items: center;
 	}
-
-	h1{
-		display: flex;
-	  	justify-content: center;
-	  	align-items: center;
-	}
-
-	button{
-		position: relative;	
-		top: 100px;
-	}
-
-
 }
 
 @media (min-width: 1025px){ //iphone 6/7/8/xs/
-	html{
-		height: 100%;
-	}
-
-	body{
+	.startscreen__background{
 		background-image: url("images/background_home.jpg");
-		background-size: cover;
-		background-position: top center;
-		background-repeat: no-repeat;
-		height: 100%;
-		background-color: unset !important;
-		padding: 10em;
-		display: flex;
-  		justify-content: center;
- 		align-items: center;
 	}
-
-	h1{
-		display: flex;
-	  	justify-content: center;
-	  	align-items: center;
-	}
-
-	button{
-		position: relative;	
-		top: 100px;
-	}
-
 
 }
-
-// @media (min-width: 412px){
-
-// 	*	{
-// 		background-image: url("images/414x736.jpg");
-// 	}
-// }
-
-// @media (max-width: 415px){
-
-// 	*	{
-// 		background-image: url("images/414x736.jpg");
-// 	}
-// }
-
-// @media (max-width: 768px){
-
-// 	*	{
-// 		background-image: url("images/768x1024.jpg");
-// 	}
-// }
-
-// @media (min-width: 1023px){
-
-// 	*	{
-// 		background-image: url("images/1024x1336.jpg");
-// 	}
-// }
-
-
-// @media (max-width: 1025px){
-
-// 	*	{
-// 		background-image: url("images/1024x1336.jpg");
-// 	}
-// }
 
