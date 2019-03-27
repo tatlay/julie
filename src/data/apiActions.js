@@ -1,4 +1,6 @@
 import axios from "./axios";
+import { exerciseDetails } from "./stateActions";
+import dummyResponse from "./dummyResponse.json";
 
 //import thunks
 
@@ -34,7 +36,7 @@ export const getExercisePlan = (data) => (dispatch, getState) => {
 		timeForWorkout: data.timeForWorkout,
 		goal: data.goal,
 	})
-		.then( response => console.log(response))
+		.then( response => exerciseDetails(dummyResponse)) //dispatching stateAction here.
 		.catch( error => console.log(error))
 
 
