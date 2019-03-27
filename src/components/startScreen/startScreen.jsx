@@ -6,7 +6,7 @@ import Button from "../Button";
 const StartScreen = () => (
     <div className="startscreen__background">
     	
-	    <Link to="/goal-screen"><h1>Julie</h1>
+	    <Link to="/time-muscles-screen"><h1>Julie</h1>
 	        <Button>Get Started</Button>
 	    </Link>
 	</div>
