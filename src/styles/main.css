@@ -44,7 +44,7 @@ button:hover {
   background-color: #1CFF49;
 }
 button:active {
-  background-color: black;
+  background-color: #1CFF49;
 }
 
 html {
@@ -57,14 +57,13 @@ body {
   background-position: top center;
   background-repeat: no-repeat;
   background-color: unset !important;
-  padding: 10em;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .startscreen__background {
-  height: 151vh;
+  height: 112vh;
   width: 46vh;
   display: flex;
   justify-content: center;

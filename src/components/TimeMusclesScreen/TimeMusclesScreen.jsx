@@ -70,7 +70,7 @@ class TimeMuscleScreen extends Component {
 					<div>
 						<input onChange={ this.handleTimeChange } type="number" name="time" id="time"  />
 					</div>
-				
+				<h3>What is your goal for this workout?</h3>
 					<div>
 						<input id="strength" type="radio" name="goal" value="strength" />
 						<label>Strength</label>
