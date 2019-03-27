@@ -28,9 +28,7 @@ class TimeMuscleScreen extends Component {
 	};
 
 
-
 	handleMuscleChange(e) {
-		e.preventDefault();
 		switch (e.currentTarget.id) {
 			case "Back" : 
 			this.setState({ back : !this.state.back })
@@ -91,17 +89,17 @@ class TimeMuscleScreen extends Component {
 					<h3>Which areas would you like to work out?</h3>
 
 					<div>
-						<input onChange={ this.handleMuscleChange } type="checkbox" name="MuscleGroup" id="Back" />
+						<input onChange={ this.handleMuscleChange } type="checkbox" name="MuscleGroup" id="Back" checked={this.state.back} />
 						<label htmlFor="Back">Back</label>
-						<input onChange={ this.handleMuscleChange } type="checkbox" name="MuscleGroup" id="Shoulders" />
+						<input onChange={ this.handleMuscleChange } type="checkbox" name="MuscleGroup" id="Shoulders" checked={this.state.shoulders} />
 						<label htmlFor="Shoulders">Shoulders</label>
-						<input onChange={ this.handleMuscleChange } type="checkbox" name="MuscleGroup" id="Biceps" />
+						<input onChange={ this.handleMuscleChange } type="checkbox" name="MuscleGroup" id="Biceps" checked={this.state.biceps} />
 						<label htmlFor="Biceps">Biceps</label>
-						<input onChange={ this.handleMuscleChange } type="checkbox" name="MuscleGroup" id="Triceps" />
+						<input onChange={ this.handleMuscleChange } type="checkbox" name="MuscleGroup" id="Triceps" checked={this.state.triceps} />
 						<label htmlFor="Triceps">Triceps</label>
-						<input onChange={ this.handleMuscleChange } type="checkbox" name="MuscleGroup" id="Chest" />
+						<input onChange={ this.handleMuscleChange } type="checkbox" name="MuscleGroup" id="Chest" checked={this.state.chest} />
 						<label htmlFor="Chest">Chest</label>
-						<input onChange={ this.handleMuscleChange } type="checkbox" name="MuscleGroup"  id="Legs" />
+						<input onChange={ this.handleMuscleChange } type="checkbox" name="MuscleGroup"  id="Legs" checked={this.state.legs} />
 						<label htmlFor="Legs">Legs</label>
 					</div>
 				</form>
