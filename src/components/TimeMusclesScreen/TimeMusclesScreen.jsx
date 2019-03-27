@@ -21,7 +21,7 @@ class TimeMuscleScreen extends Component {
 	}//end of constructor
 
 	handleTimeChange(e) {
-		this.setState({ timeForWorkout : this.state.timeForWorkout + +e.currentTarget.value })
+		this.setState({ timeForWorkout : +e.currentTarget.value })
 
 	};
 
@@ -91,9 +91,15 @@ class TimeMuscleScreen extends Component {
 					</div>
 				</form>
 
+				<button 
+					onClick={ () => this.props.onSubmit(this.state) }>
+
+				Submit</button> 
+
 			</React.Fragment>
 		)
 	}
+	//submit button
 
 } 
 
