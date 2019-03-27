@@ -11,7 +11,7 @@ const Table = ({ sets, targetReps, Workout }) => {
                     <td>Target Reps</td>
                     <td>Completed Reps</td>
                     <td>Weight</td>
-                    <td> </td>
+                    <td>Completed</td>
                 </tr>
             </thead>
             <tbody>
