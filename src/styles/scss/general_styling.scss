@@ -1,6 +1,4 @@
-html{
-	height: 100%;
-}
+
 	
 body{
 	background-size: cover;
@@ -10,6 +8,7 @@ body{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
 }
 
 .startscreen__background{
@@ -26,9 +25,24 @@ a{
 
 
 .timemusclescreen_mins{
-	width: 40px;
+	
 	height: 40px;
 	position: relative;
 	font-size: 33px;
 
+}
+
+.timemusclescreen_divide{
+	background-color: #A2A2A2;
+	height: 2px;
+	margin: 20px;
+}
+
+div.timemusclescreen__radio{
+	display: inline-flex;
+}
+
+div.timemusclescreen__checkbox{
+	display: flex;
+	flex-direction: columns; //thisn
 }

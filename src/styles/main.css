@@ -3,17 +3,15 @@
     background-image: url("images/375x812.jpg");
   }
 
-  body {
-    padding: 50px;
+  .timemusclescreen_divide {
+    background-color: #A2A2A2;
+    height: 2px;
+    margin: 0px;
   }
 }
 @media (max-width: 1024px) {
   .startscreen__background {
     background-image: url("images/375x812.jpg");
-  }
-
-  body {
-    padding: 50px;
   }
 }
 @media (min-width: 1025px) {
@@ -26,8 +24,8 @@
     align-items: center;
   }
 
-  body {
-    padding: 50px;
+  input#time.timemusclescreen_mins {
+    width: 70px;
   }
 }
 h1 {
@@ -58,6 +56,13 @@ h3 {
   align-items: center;
 }
 
+label {
+  font-family: "Helvetica";
+  font-weight: 200;
+  display: flex;
+  align-items: grid-column-end;
+}
+
 button {
   background-color: #FF3A33;
   background-image: unset;
@@ -80,10 +85,6 @@ button:active {
   display: flex;
   justify-content: right;
   align-items: right;
-}
-
-html {
-  height: 100%;
 }
 
 body {
@@ -109,10 +110,24 @@ a {
 }
 
 .timemusclescreen_mins {
-  width: 40px;
   height: 40px;
   position: relative;
   font-size: 33px;
+}
+
+.timemusclescreen_divide {
+  background-color: #A2A2A2;
+  height: 2px;
+  margin: 20px;
+}
+
+div.timemusclescreen__radio {
+  display: inline-flex;
+}
+
+div.timemusclescreen__checkbox {
+  display: flex;
+  flex-direction: columns;
 }
 
 /*# sourceMappingURL=main.css.map */

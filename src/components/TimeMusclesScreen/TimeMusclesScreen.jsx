@@ -91,6 +91,7 @@ class TimeMuscleScreen extends Component {
 
 						<label className="timemusclescreen__endurance">Endurance</label>
 					</div>
+				<div className="timemusclescreen_divide"></div>	
 
 
 					<h3 className="timemusclescreen__areas">Which areas would you like to work out?</h3>
@@ -110,6 +111,12 @@ class TimeMuscleScreen extends Component {
 						<label htmlFor="Legs">Legs</label>
 
 					</div>
+
+
+				<div className="timemusclescreen_divide"></div>	
+
+
+
 				</form>
 
 				<button 
