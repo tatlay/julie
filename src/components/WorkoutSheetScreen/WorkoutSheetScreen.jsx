@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import { Link } from "react-router-dom";
 
 import TimeDisplay from "../TimeDisplay";
 import Table from "../Table";
@@ -10,7 +11,10 @@ const WorkoutSheetScreen = ({ exerciseFocus, workoutTimeMins, restTime }) => (
         <TimeDisplay time={workoutTimeMins}>Workout Time:</TimeDisplay>
         <TimeDisplay time={restTime}>Rest Time:</TimeDisplay>
         <Table />
-        <Button>Done</Button>
+
+        <Link to="/">
+            <Button>Done</Button>
+        </Link>
     </Fragment>
 );
 

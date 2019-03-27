@@ -8,6 +8,7 @@ class TableRow extends Component {
 
         this.handleCompRepsChange = this.handleCompRepsChange.bind(this);
         this.handleWeightChange = this.handleWeightChange.bind(this);
+        this.handleCheckboxChange = this.handleCheckboxChange.bind(this);
     };
 
     handleCompRepsChange(e, i) {
@@ -27,6 +28,16 @@ class TableRow extends Component {
             return exercise;
         })});
     }
+    
+    handleCheckboxChange(e, i) {
+        this.setState({ Workout: this.state.Workout.map((exercise, j) => {
+            if (i === j) {
+                // console.log(exercise.completed)
+                exercise.completed = !exercise.completed
+            }
+            return exercise;
+        })});
+    }
 
     render() {
         let { sets, targetReps, Workout } = this.state;
@@ -39,7 +50,7 @@ class TableRow extends Component {
                         <td>{targetReps}</td>
                         <td><input type="number" value={exercise.completedReps} onChange={(e) => this.handleCompRepsChange(e,i)}/></td>
                         <td><input type="number" value={exercise.weight} onChange={(e) => this.handleWeightChange(e,i)}/></td>
-                        <td><input type="checkbox"/></td>
+                        <td><input checked={exercise.completed} type="checkbox" onChange={(e) => this.handleCheckboxChange(e,i)}/></td>
                     </tr>
                 ))}
             </Fragment>
