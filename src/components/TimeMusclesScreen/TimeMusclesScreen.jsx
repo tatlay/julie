@@ -114,9 +114,13 @@ class TimeMuscleScreen extends Component {
 				</form>
 
 				<button 
-					onClick={ () => this.props.onSubmit(this.state) }>
+					onClick={ () => { 
+						this.props.handleLoad();
+						this.props.onSubmit(this.state) }
+					}>
 
-				Submit</button> 
+					Submit
+				</button> 
 
 				<Link to="/workout-sheet-screen"><button>Workout</button></Link>
 
