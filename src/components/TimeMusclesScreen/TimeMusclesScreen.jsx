@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 
 import Loading from "../Loading";
 
@@ -77,17 +76,15 @@ class TimeMuscleScreen extends Component {
 
 					<h1 className="timemusclescreen__title">Workout with Julie</h1>
 
+					<h3>Workout Time
+
+						<input className="timemusclescreen_mins" onChange={ this.handleTimeChange } type="number" name="time" id="time" placeholder="mins"/></h3>
+					
 					<form className="timemusclescreen__form">
 
+						<label className="timemusclescreen__endurance">Endurance</label>
 
-						<div className="timemusclescreen__time">
-
-						<h3>Workout Time</h3>
-
-							<input className="timemusclescreen_mins" onChange={ this.handleTimeChange } type="number" name="time" id="time"/>
-						</div>
-
-					<div className="timemusclescreen_divide"></div>	
+				<div className="timemusclescreen_divide"></div>	
 
 					<h3 className="timemusclescreen__goal">What is your goal for this workout?</h3>
 						<div className="timemusclescreen__radio">
@@ -103,8 +100,11 @@ class TimeMuscleScreen extends Component {
 							<label className="timemusclescreen__endurance">Endurance</label>
 						</div>
 
+					
 
-						<h3 className="timemusclescreen__areas">Which areas would you like to work out?</h3>
+				<div className="timemusclescreen_divide"></div>	
+
+			<h3 className="timemusclescreen__areas">Which areas would you like to work out?</h3>
 
 						<div className="timemusclescreen__checkbox">
 							<input onChange={ this.handleMuscleChange } type="checkbox" name="MuscleGroup" id="Back" checked={this.state.back} />
@@ -122,15 +122,7 @@ class TimeMuscleScreen extends Component {
 
 						</div>
 					</form>
-        
-        		<button 
-					onClick={ this.handleClick }>
-
-					Submit
-				</button>
-
-					<Link to="/workout-sheet-screen"><button>Workout</button></Link>
-
+					<button onClick={ this.handleClick }>Submit</button>
 				</Loading>
 			</React.Fragment>
 		)

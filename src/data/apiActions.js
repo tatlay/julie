@@ -2,6 +2,7 @@ import axios from "./axios";
 import { exerciseDetails } from "./stateActions";
 import dummyResponse from "./dummyResponse.json";
 import { createExerciseArray } from "./logicFunctions";
+import history from "../data/history";
 
 export const getExercisePlan = (data) => (dispatch, getState) => {
 	
@@ -23,5 +24,7 @@ export const getExercisePlan = (data) => (dispatch, getState) => {
 		.catch( error => console.log(error)) */
 		setTimeout(() => {
 			dispatch(exerciseDetails(dummyResponse));
+				history.push("/workout-sheet-screen");
 		}, 3000);
+
 }

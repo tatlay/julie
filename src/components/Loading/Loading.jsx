@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import "./Loading.css";
 
 class Loading extends Component {
@@ -13,7 +13,12 @@ class Loading extends Component {
         return loaded ? (
             children
         ) : (
-            <div className="lds-heart"><div></div></div>
+            <Fragment>
+                <div className="lds-heart"><div></div></div>
+                <p>
+                    <small>Creating your Workout&hellip;</small>
+                </p>
+            </Fragment>
         );
     }
 }
