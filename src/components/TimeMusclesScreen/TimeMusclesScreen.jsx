@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 
 import Loading from "../Loading";
 
@@ -123,14 +122,7 @@ class TimeMuscleScreen extends Component {
 						</div>
 					</form>
         
-        <button 
-					onClick={ this.handleClick }>
-
-					Submit
-				</button>
-
-					<Link to="/workout-sheet-screen"><button>Workout</button></Link>
-
+					<button onClick={ this.handleClick }>Submit</button>
 				</Loading>
 			</React.Fragment>
 		)

@@ -1,12 +1,14 @@
 import React, { Fragment } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Router, Route, Switch } from "react-router-dom";
+
+import history from "../../data/history";
 import StartScreen from "../startScreen";
 import TimeMusclesScreen from "../TimeMusclesScreen";
 import WorkoutSheetScreen from "../WorkoutSheetScreen";
 import "../../styles/main.css";
 
 const App = () => (
-    <Router>
+    <Router history={ history }>
         <Fragment>
             <Switch>
                 <Route exact path="/" component={StartScreen} />
