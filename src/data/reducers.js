@@ -9,6 +9,7 @@ const setChangeLoad = (state) => ({...state, loaded : !state.loaded})
 
 const reducer = (state, action) => {
     switch (action.type) {
+
     	case "setExerciseDetails": return setExercise(state, action); 
     	case "setChangeLoad": return setChangeLoad(state); 
         case "reset":
