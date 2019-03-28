@@ -122,13 +122,12 @@ class TimeMuscleScreen extends Component {
 
 						</div>
 					</form>
-        
 					<button onClick={ this.handleClick }>Submit</button>
 				</Loading>
 			</React.Fragment>
 		)
 	}
-	//submit button
+
 
 } 
 

@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
+import SignInScreen from "../SignInScreen";
 import { Router, Route, Switch } from "react-router-dom";
-
 import history from "../../data/history";
 import StartScreen from "../startScreen";
 import TimeMusclesScreen from "../TimeMusclesScreen";
@@ -11,6 +11,7 @@ const App = () => (
     <Router history={ history }>
         <Fragment>
             <Switch>
+				<Route exact path="/sign-in-screen" component={SignInScreen} />            
                 <Route exact path="/" component={StartScreen} />
                 <Route exact path="/time-muscles-screen" component={TimeMusclesScreen} />
                 <Route exact path="/workout-sheet-screen" component={WorkoutSheetScreen} />
