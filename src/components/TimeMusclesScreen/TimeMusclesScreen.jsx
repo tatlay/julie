@@ -9,6 +9,11 @@ class TimeMuscleScreen extends Component {
 		super(props);
 
 		this.state = {
+			errMsg: "",
+			muscleErr: "",
+			goalErr: "",
+			durationErr: "",
+
 			chest : false,
 			back : false,
 			biceps : false,
@@ -27,7 +32,7 @@ class TimeMuscleScreen extends Component {
 	}//end of constructor
 
 	handleTimeChange(e) {
-		this.setState({ timeForWorkout : +e.currentTarget.value })
+		this.setState({ timeForWorkout : +e.currentTarget.value >= 0 ? +e.currentTarget.value : 0})
 
 	};
 
@@ -62,8 +67,34 @@ class TimeMuscleScreen extends Component {
 	}
 
 	handleClick(){
-		this.props.handleLoad();
-		this.props.onSubmit(this.state);
+		if(this.state.timeForWorkout <= 0) {
+			this.setState({durationErr: "Enter workout duration. "});
+		} else {
+			this.setState({durationErr: ""});
+		}
+		if(!this.state.goal) {
+			this.setState({goalErr: "Select a goal. "});
+		} else {
+			this.setState({goalErr: ""});
+		}
+		if(!this.state.chest && !this.state.back && !this.state.biceps && !this.state.triceps && !this.state.shoulders && !this.state.legs) {
+			this.setState({muscleErr: "Select muscle group. "});
+		} else {
+			this.setState({muscleErr: ""});
+		}
+
+		if(this.state.timeForWorkout <= 0 || !this.state.goal || (!this.state.chest && !this.state.back && !this.state.biceps && !this.state.triceps && !this.state.shoulders && !this.state.legs)) {
+			this.setState({errMsg: "Errors in form: "});
+		} else {
+			this.setState({errMsg: ""});
+		}
+		
+
+		if((this.state.chest || this.state.back || this.state.biceps || this.state.triceps || this.state.shoulders || this.state.legs) && this.state.goal !== false &&  this.state.timeForWorkout > 0) {
+			this.props.handleLoad();
+			const {errMsg, muscleErr, goalErr, durationErr, ...newState} = this.state;
+			this.props.onSubmit(newState);
+		}
 	}
 
 
@@ -83,7 +114,7 @@ class TimeMuscleScreen extends Component {
 
 						<h3>Workout Time</h3>
 
-							<input className="timemusclescreen_mins" onChange={ this.handleTimeChange } type="number" name="time" id="time"/>
+							<input className="timemusclescreen_mins" onChange={ this.handleTimeChange } type="number" name="time" id="time" value={this.state.timeForWorkout}/>
 						</div>
 
 					<div className="timemusclescreen_divide"></div>	
@@ -121,7 +152,8 @@ class TimeMuscleScreen extends Component {
 
 						</div>
 					</form>
-        
+					<p>{this.state.errMsg}  {this.state.durationErr}  {this.state.goalErr}  {this.state.muscleErr} </p>
+
 					<button onClick={ this.handleClick }>Submit</button>
 				</Loading>
 			</React.Fragment>
