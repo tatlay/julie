@@ -7,14 +7,14 @@ import Button from "../Button";
 
 const WorkoutSheetScreen = ({ exerciseFocus, workoutTimeMins, restTime }) => (
     <Fragment>
-        <h1>{exerciseFocus}</h1>
-        <TimeDisplay time={workoutTimeMins}>Workout Time:</TimeDisplay>
-        <TimeDisplay time={restTime}>Rest Time:</TimeDisplay>
-        <Table />
+            <h1>{exerciseFocus}</h1>
+            <TimeDisplay time={workoutTimeMins}>Workout Time:</TimeDisplay>
+            <TimeDisplay time={restTime}>Rest Time:</TimeDisplay>
+            <Table />
 
-        <Link to="/">
-            <Button>Done</Button>
-        </Link>
+            <Link to="/">
+                <Button>Done</Button>
+            </Link>
     </Fragment>
 );
 
