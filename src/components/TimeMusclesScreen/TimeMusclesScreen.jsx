@@ -83,7 +83,7 @@ class TimeMuscleScreen extends Component {
 					<form className="timemusclescreen__form">
 
 						<label className="timemusclescreen__endurance">Endurance</label>
-<!-- 					</div> -->
+
 				<div className="timemusclescreen_divide"></div>	
 
 					<h3 className="timemusclescreen__goal">What is your goal for this workout?</h3>
