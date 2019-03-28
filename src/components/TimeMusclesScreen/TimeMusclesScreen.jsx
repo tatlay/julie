@@ -71,9 +71,9 @@ class TimeMuscleScreen extends Component {
 
 					<div className="timemusclescreen__time">
 
-					<h3>Workout Time</h3>
+					<h3>Workout Time
 
-						<input className="timemusclescreen_mins" onChange={ this.handleTimeChange } type="number" name="time" id="time"/>
+						<input className="timemusclescreen_mins" onChange={ this.handleTimeChange } type="number" name="time" id="time" placeholder="mins"/></h3>
 					</div>
 
 				<div className="timemusclescreen_divide"></div>	

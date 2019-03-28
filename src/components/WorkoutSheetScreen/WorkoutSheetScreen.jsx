@@ -7,12 +7,15 @@ import Button from "../Button";
 
 const WorkoutSheetScreen = ({ exerciseFocus, workoutTimeMins, restTime }) => (
     <Fragment>
-    	<div class="workoutSheetScreen_wrapper">
-    	<h1 class="timemusclescreen__title">Workout with Julie</h1>
-        <h1>{exerciseFocus}</h1>
+    	<div className="workoutSheetScreen_wrapper">
+    	<h1 className="timemusclescreen__title">Workout with Julie</h1>
+        <h1 className="workoutsheetscreen_h1">{exerciseFocus}</h1>
         <TimeDisplay time={workoutTimeMins}>Workout Time:</TimeDisplay>
-        <TimeDisplay time={restTime}>Rest Time:</TimeDisplay>
+        <TimeDisplay time={restTime}>Rest time between sets is </TimeDisplay>
+        
+        <div className="timemusclescreen_divide"></div>
         <Table />
+        <div className="timemusclescreen_divide"></div>
 
         <Link to="/">
             <Button>Done</Button>

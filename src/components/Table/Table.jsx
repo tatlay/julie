@@ -5,15 +5,15 @@ const Table = ({ sets, targetReps, Workout }) => {
     return (
         <table>
             <thead>
-                <tr>
-                    <td>Exercise</td>
+                <tr className="table__inputwidth">
+                    <td></td>
                     <td>Sets</td>
-                    <td>Target Reps</td>
-                    <td>Completed Reps</td>
-                    <td>Weight</td>
-                    <td>Completed</td>
+                    <td>Target</td>
+                    <td className="table__red">Reps</td>
+                    <td className="table__red">kg</td>
+                    <td className="table__red">Done</td>
                 </tr>
-            </thead>
+                   </thead>
             <tbody>
                 <TableRow />
             </tbody>
