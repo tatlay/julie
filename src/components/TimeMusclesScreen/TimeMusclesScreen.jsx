@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 
+import Loading from "../Loading";
+
+
 class TimeMuscleScreen extends Component {
 
 	constructor(props) {
@@ -19,6 +22,7 @@ class TimeMuscleScreen extends Component {
 		this.handleMuscleChange = this.handleMuscleChange.bind(this);
 		this.handleTimeChange = this.handleTimeChange.bind(this);
 		this.handleGoalChange = this.handleGoalChange.bind(this);
+		this.handleClick = this.handleClick.bind(this);
 		
 	}//end of constructor
 
@@ -57,73 +61,70 @@ class TimeMuscleScreen extends Component {
 		this.setState({ goal : e.currentTarget.value })
 	}
 
+	handleClick(){
+		this.props.handleLoad();
+		this.props.onSubmit(this.state);
+	}
+
 
 	render() {
 
 		return (
 
 			<React.Fragment>
+				<Loading>
 
-				<h1 className="timemusclescreen__title">Workout with Julie</h1>
-
-				<form className="timemusclescreen__form">
-
-
-					<div className="timemusclescreen__time">
+					<h1 className="timemusclescreen__title">Workout with Julie</h1>
 
 					<h3>Workout Time
 
 						<input className="timemusclescreen_mins" onChange={ this.handleTimeChange } type="number" name="time" id="time" placeholder="mins"/></h3>
-					</div>
-
-				<div className="timemusclescreen_divide"></div>	
-
-				<h3 className="timemusclescreen__goal">What is your goal for this workout?</h3>
-					<div className="timemusclescreen__radio">
-						<input onChange={ this.handleGoalChange } id="strength" type="radio" name="goal" value="strength" />
-
-						<label>Strength</label>
 					
-						<input onChange={ this.handleGoalChange } id="size" type="radio" name="goal" value="size" />
-						<label>Size</label>
-					
-						<input onChange={ this.handleGoalChange } id="endurance" type="radio" name="goal" value="endurance" />
+					<form className="timemusclescreen__form">
 
 						<label className="timemusclescreen__endurance">Endurance</label>
-					</div>
+<!-- 					</div> -->
 				<div className="timemusclescreen_divide"></div>	
 
+					<h3 className="timemusclescreen__goal">What is your goal for this workout?</h3>
+						<div className="timemusclescreen__radio">
+							<input onChange={ this.handleGoalChange } id="strength" type="radio" name="goal" value="strength" />
 
-					<h3 className="timemusclescreen__areas">Which areas would you like to work out?</h3>
+							<label>Strength</label>
+						
+							<input onChange={ this.handleGoalChange } id="size" type="radio" name="goal" value="size" />
+							<label>Size</label>
+						
+							<input onChange={ this.handleGoalChange } id="endurance" type="radio" name="goal" value="endurance" />
 
-					<div className="timemusclescreen__checkbox">
-						<input onChange={ this.handleMuscleChange } type="checkbox" name="MuscleGroup" id="Back" checked={this.state.back} />
-						<label htmlFor="Back">Back</label>
-						<input onChange={ this.handleMuscleChange } type="checkbox" name="MuscleGroup" id="Shoulders" checked={this.state.shoulders} />
-						<label htmlFor="Shoulders">Shoulders</label>
-						<input onChange={ this.handleMuscleChange } type="checkbox" name="MuscleGroup" id="Biceps" checked={this.state.biceps} />
-						<label htmlFor="Biceps">Biceps</label>
-						<input onChange={ this.handleMuscleChange } type="checkbox" name="MuscleGroup" id="Triceps" checked={this.state.triceps} />
-						<label htmlFor="Triceps">Triceps</label>
-						<input onChange={ this.handleMuscleChange } type="checkbox" name="MuscleGroup" id="Chest" checked={this.state.chest} />
-						<label htmlFor="Chest">Chest</label>
-						<input onChange={ this.handleMuscleChange } type="checkbox" name="MuscleGroup"  id="Legs" checked={this.state.legs} />
-						<label htmlFor="Legs">Legs</label>
+							<label className="timemusclescreen__endurance">Endurance</label>
+						</div>
 
-					</div>
-
+					
 
 				<div className="timemusclescreen_divide"></div>	
 
+			<h3 className="timemusclescreen__areas">Which areas would you like to work out?</h3>
 
+						<div className="timemusclescreen__checkbox">
+							<input onChange={ this.handleMuscleChange } type="checkbox" name="MuscleGroup" id="Back" checked={this.state.back} />
+							<label htmlFor="Back">Back</label>
+							<input onChange={ this.handleMuscleChange } type="checkbox" name="MuscleGroup" id="Shoulders" checked={this.state.shoulders} />
+							<label htmlFor="Shoulders">Shoulders</label>
+							<input onChange={ this.handleMuscleChange } type="checkbox" name="MuscleGroup" id="Biceps" checked={this.state.biceps} />
+							<label htmlFor="Biceps">Biceps</label>
+							<input onChange={ this.handleMuscleChange } type="checkbox" name="MuscleGroup" id="Triceps" checked={this.state.triceps} />
+							<label htmlFor="Triceps">Triceps</label>
+							<input onChange={ this.handleMuscleChange } type="checkbox" name="MuscleGroup" id="Chest" checked={this.state.chest} />
+							<label htmlFor="Chest">Chest</label>
+							<input onChange={ this.handleMuscleChange } type="checkbox" name="MuscleGroup"  id="Legs" checked={this.state.legs} />
+							<label htmlFor="Legs">Legs</label>
 
-				</form>
-
-				<button 
-					onClick={ () => this.props.onSubmit(this.state) }>
-
-				Submit</button> 
-
+						</div>
+					</form>
+        
+					<button onClick={ this.handleClick }>Submit</button>
+				</Loading>
 			</React.Fragment>
 		)
 	}

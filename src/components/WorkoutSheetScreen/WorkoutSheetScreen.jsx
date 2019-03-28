@@ -7,6 +7,7 @@ import Button from "../Button";
 
 const WorkoutSheetScreen = ({ exerciseFocus, workoutTimeMins, restTime }) => (
     <Fragment>
+
     	<div className="workoutSheetScreen_wrapper">
     	<h1 className="timemusclescreen__title">Workout with Julie</h1>
         <h1 className="workoutsheetscreen_h1">{exerciseFocus}</h1>
