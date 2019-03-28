@@ -4,13 +4,9 @@ import { getExercisePlan } from "../../data/apiActions";
 
 
 const mapDispatchToProps = (dispatch) => ({
-	onSOmething: data => dispatch(antheraction(data)),
+	handleLoad : () => dispatch()
 	onSubmit: data => dispatch(getExercisePlan(data))
 })
-
-
-
-
 
 export default connect(
     null,
