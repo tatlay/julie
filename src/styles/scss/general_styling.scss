@@ -42,6 +42,7 @@ input{
 	float: right;
 	display: flex;
 
+
 }
 
 #root{
@@ -50,7 +51,7 @@ input{
 	flex-wrap: nowrap;
 }
 
-	.timemusclescreen__form{
-		display: flex;
-		flex-direction: column;
-	}
+.timemusclescreen__form{
+	display: flex;
+	flex-direction: column;
+}
