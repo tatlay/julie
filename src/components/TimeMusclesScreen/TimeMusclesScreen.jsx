@@ -23,6 +23,7 @@ class TimeMuscleScreen extends Component {
 		this.handleMuscleChange = this.handleMuscleChange.bind(this);
 		this.handleTimeChange = this.handleTimeChange.bind(this);
 		this.handleGoalChange = this.handleGoalChange.bind(this);
+		this.handleClick = this.handleClick.bind(this);
 		
 	}//end of constructor
 
@@ -59,6 +60,11 @@ class TimeMuscleScreen extends Component {
 
 	handleGoalChange(e) {
 		this.setState({ goal : e.currentTarget.value })
+	}
+
+	handleClick(){
+		this.props.handleLoad();
+		this.props.onSubmit(this.state);
 	}
 
 
@@ -118,10 +124,7 @@ class TimeMuscleScreen extends Component {
 					</form>
         
         <button 
-					onClick={ () => { 
-						this.props.handleLoad();
-						this.props.onSubmit(this.state) }
-					}>
+					onClick={ this.handleClick }>
 
 					Submit
 				</button>

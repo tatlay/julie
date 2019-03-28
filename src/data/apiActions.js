@@ -21,6 +21,7 @@ export const getExercisePlan = (data) => (dispatch, getState) => {
 	})
 		.then( response => exerciseDetails(dummyResponse)) //dispatching stateAction here.
 		.catch( error => console.log(error)) */
-
-		dispatch(exerciseDetails(dummyResponse));
+		setTimeout(() => {
+			dispatch(exerciseDetails(dummyResponse));
+		}, 3000);
 }
