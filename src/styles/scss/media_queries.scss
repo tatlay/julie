@@ -1,33 +1,32 @@
 @media (max-width: 414px){ //iphone 6/7/8/xs/
 	.startscreen__background{
-		background-image: url("images/375x812.jpg");
+		height: 100vh;
+		width: 46vh;
 	}
-	body{
-		padding: 50px;
-	}	
+	
+	.timemusclescreen_divide{
+		background-color: #A2A2A2;
+		height: 2px;
+		margin: 0px;
+	}
+}
+
+
+@media (max-width: 768px){ //iphone 6/7/8/xs/
+	.startscreen__background{
+		height: 100vh;
+		width: 46vh;
+	}
 	
 }
 
-@media (max-width: 1024px){ //ipad / pro
-	.startscreen__background{
-		background-image: url("images/375x812.jpg");
-	}
-		body{
-		padding: 50px;
-	}
-}
 
-@media (min-width: 1025px){ //iphone 6/7/8/xs/
+@media (min-width: 1025px){//everthing else
 	.startscreen__background{
-		background-image: url("images/background_home.jpg");
-		height: 100%;
-		width: 100%  ;
 		display: flex;
 		justify-content: center;
 		align-items: center;
-	}
-		body{
-		padding: 50px;
+		height: 99vh;
+		width: 97vh;
 	}
 }
-

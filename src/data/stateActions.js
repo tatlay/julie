@@ -13,3 +13,11 @@ export const changeLoad = () => {
 		type : "setChangeLoad"
 	}
 }
+
+export const setUserName = (userName) => {
+	console.log(userName)
+	return {
+		type : "setUserName",
+		userName,
+	}
+}

@@ -1,4 +1,5 @@
 const initial = {
+	userName : "",
     loaded: true,
     restTime: 0,
     sets: 0,
