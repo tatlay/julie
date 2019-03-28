@@ -10,7 +10,7 @@ const Table = ({ sets, targetReps, Workout }) => {
                     <td>Sets</td>
                     <td>Target</td>
                     <td className="table__red">Reps</td>
-                    <td className="table__red">kg</td>
+                    <td className="table__red">KG</td>
                     <td className="table__red">Done</td>
                 </tr>
                    </thead>

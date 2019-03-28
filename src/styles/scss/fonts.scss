@@ -1,14 +1,18 @@
 h1{
-	font-family: "Helvetica";
-	font-weight: lighter;
 	color: white;	
 	display: flex;
   	justify-content: center;
   	align-items: center;
 }
 
+h1.workoutsheetscreen_h1{
+	color: black;
+	font-weight: lighter;
+
+}
+
 h3{
-	font-family: "Helvetica";
+	
 	font-weight: lighter;
 	font-weight: 10px;
 	color: black;	
@@ -19,7 +23,6 @@ h3{
 
 .timemusclescreen__title{
 	color: #FF3A33;
-	font-family: "Helvetica";
 	font-weight: 200;
 	display: flex;
   	justify-content: center;
@@ -28,15 +31,17 @@ h3{
 }
 
 label{
-	font-family: "Helvetica";
 	font-weight: 300;
 	display: flex;
 	justify-content: space-between;
 	padding-top: 23px
 }
 
-
 .timemusclescreen__radio{
 	display: flex;
 	justify-content: space-between;
+}
+
+a{
+	text-decoration: none;
 }

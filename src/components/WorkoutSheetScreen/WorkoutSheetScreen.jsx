@@ -11,7 +11,7 @@ const WorkoutSheetScreen = ({ exerciseFocus, workoutTimeMins, restTime }) => (
     	<h1 className="timemusclescreen__title">Workout with Julie</h1>
         <h1 className="workoutsheetscreen_h1">{exerciseFocus}</h1>
         <TimeDisplay time={workoutTimeMins}>Workout Time:</TimeDisplay>
-        <TimeDisplay time={restTime}>Rest time between sets is </TimeDisplay>
+        <TimeDisplay time={restTime}>Rest between sets is </TimeDisplay>
         
         <div className="timemusclescreen_divide"></div>
         <Table />

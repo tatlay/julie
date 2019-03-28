@@ -8,8 +8,8 @@ body{
 	align-items: center;
 	font-size: 20px;
 	font-family: "Helvetica";
+	font-weight: lighter;
 }
-
 
 .startscreen__background{
 
@@ -20,26 +20,18 @@ body{
 
 	}
 
-a{
-	text-decoration: none;
-}
-
-	.timemusclescreen_mins{
-	width: 84px;	
+.timemusclescreen_mins{
+	width: 87px;	
 	position: relative;
 	font-size: 33px;
 	right: -130px;
 
 }
 
-
 .timemusclescreen_divide{
 	background-color: #A2A2A2;
 	height: 2px;
 	margin: 20px;
-}
-
-div.timemusclescreen__radio{
 }
 
 input{
@@ -59,10 +51,6 @@ input{
 .timemusclescreen__form{
 	display: flex;
 	flex-direction: column;
-}
-
-h1.workoutsheetscreen_h1{
-	color: black;
 }
 
 .table__red{
