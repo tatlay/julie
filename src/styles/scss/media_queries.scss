@@ -1,32 +1,38 @@
+@media (max-width: 496px){ //iphone 5
+	
+	input{
+		height: 10px;
+		width: 10px;
+	}
+	#root{
+	width: -webkit-fill-available;
+}
+
+}	
+	
+
 @media (max-width: 414px){ //iphone 6/7/8/xs/
 	.startscreen__background{
 		height: 100vh;
 		width: 46vh;
 	}
 	
-	.timemusclescreen_divide{
-		background-color: #A2A2A2;
-		height: 2px;
-		margin: 0px;
-	}
 }
-
 
 @media (max-width: 768px){ //iphone 6/7/8/xs/
 	.startscreen__background{
-		height: 100vh;
-		width: 46vh;
+		height: 130vh;
+		width: 50vh;
 	}
-	
 }
 
-
-@media (min-width: 1025px){//everthing else
+@media (min-width: 769px){//everthing else
 	.startscreen__background{
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		height: 99vh;
-		width: 97vh;
+		background-repeat: no-repeat;
+		height: 81vh;
+		width: 78vh;
 	}
 }

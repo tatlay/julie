@@ -3,6 +3,7 @@ h1{
 	display: flex;
   	justify-content: center;
   	align-items: center;
+  	font-weight: 300;
 }
 
 h1.workoutsheetscreen_h1{
@@ -34,7 +35,14 @@ label{
 	font-weight: 300;
 	display: flex;
 	justify-content: space-between;
-	padding-top: 23px
+	padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+.timemusclescreen__workoutLabel{
+	text-align: center;
+    position: relative;
+    left: 90px;
 }
 
 .timemusclescreen__radio{
