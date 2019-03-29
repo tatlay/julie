@@ -7,16 +7,16 @@ class SignInScreen extends Component {
 
 		this.state = {
 			input : ""
-		}
+		};
 
 		this.handleInput = this.handleInput.bind(this);
 
-	}//end of constructor
+	};
 
 	handleInput (e) {
 		this.setState({ input : e.currentTarget.value})
 		console.log(this.state.input)
-	}
+	};
 
 
 	render () {
@@ -42,9 +42,9 @@ class SignInScreen extends Component {
 				</button>
 
 
-				</React.Fragment>
-		)
-	}//end of render
-}
+			</React.Fragment>
+		);
+	};
+};
 
 export default SignInScreen;

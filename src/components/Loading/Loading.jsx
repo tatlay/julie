@@ -15,9 +15,7 @@ class Loading extends Component {
         ) : (
             <Fragment>
                 <div className="lds-heart"><div></div></div>
-                <p>
                     <h3 className="loading-message">Creating your Workout&hellip;</h3>
-                </p>
             </Fragment>
         );
     }
