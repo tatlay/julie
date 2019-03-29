@@ -1,6 +1,5 @@
 import axios from "./axios";
 import { exerciseDetails } from "./stateActions";
-import dummyResponse from "./dummyResponse.json";
 import { createExerciseArray } from "./logicFunctions";
 import history from "../data/history";
 
