@@ -4,7 +4,7 @@ import { createExerciseArray } from "./logicFunctions";
 import history from "../data/history";
 
 export const getExercisePlan = (data) => (dispatch, getState) => {
-	
+
 	let mgroup = createExerciseArray(data);
 
 
@@ -13,15 +13,13 @@ export const getExercisePlan = (data) => (dispatch, getState) => {
 		categories: mgroup,
 		time: data.timeForWorkout,
 		goal: data.goal,
-	
-		
+
+
 	}).then( response => {
-		console.log(response.data);
 		dispatch(exerciseDetails(response.data))
-		console.log(response.data)
 
 		history.push("/workout-sheet-screen");
 
-	}).catch( error => console.log(error)) 
+	}).catch( error => console.log(error))
 
 }

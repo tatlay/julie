@@ -1,9 +1,9 @@
 import React, { Fragment } from "react";
 
-const TimeDisplay = ({ children, time }) => (
+const TimeDisplay = ({ children, time, timeUnit}) => (
     <Fragment>
         <h3>{children}
-        {time} mins</h3>
+        {time} {timeUnit}</h3>
     </Fragment>
 );
 

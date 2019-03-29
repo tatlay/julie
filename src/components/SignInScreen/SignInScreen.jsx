@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 
-
 class SignInScreen extends Component {
 
 	constructor(props) {
@@ -46,6 +45,6 @@ class SignInScreen extends Component {
 				</React.Fragment>
 		)
 	}//end of render
-}		
+}
 
 export default SignInScreen;
