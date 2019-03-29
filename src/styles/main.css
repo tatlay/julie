@@ -1,5 +1,155 @@
-* {
-  background-color: hotpink;
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  form {
+    width: 268px;
+  }
+}
+@media only screen and (min-device-width: 1024px) {
+  form {
+    font-size: 2rem;
+  }
+
+  label {
+    font-size: 2rem;
+  }
+}
+h1 {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 300;
+}
+
+h1.workoutsheetscreen_h1 {
+  color: black;
+  font-weight: lighter;
+}
+
+h3 {
+  font-weight: lighter;
+  font-weight: 10px;
+  color: black;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.timemusclescreen__title {
+  color: #FF3A33;
+  font-weight: 200;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+label {
+  font-weight: 300;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.timemusclescreen__workoutLabel {
+  text-align: center;
+  position: relative;
+  left: 90px;
+}
+
+.timemusclescreen__radio {
+  display: flex;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  background-color: #FF3A33;
+  background-image: unset;
+  border-radius: 28px;
+  border: 0;
+  width: 150px;
+  height: 50px;
+  color: white;
+  position: relative;
+}
+button:hover {
+  background-color: #1CFF49;
+}
+button:active {
+  background-color: #1CFF49;
+}
+
+.goalscreen__next {
+  display: flex;
+  justify-content: right;
+  align-items: right;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-family: "Helvetica";
+  font-weight: lighter;
+}
+
+.startscreen__background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("images/background_home.jpg");
+  background-size: cover;
+  width: 97vw;
+  height: 98vh;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-color: unset !important;
+}
+
+.timemusclescreen_mins {
+  width: 87px;
+  position: relative;
+  font-size: 33px;
+  right: -90px;
+}
+
+.timemusclescreen_divide {
+  background-color: #A2A2A2;
+  height: 2px;
+  margin: 20px;
+}
+
+input {
+  float: right;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.timemusclescreen__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.table__red {
+  color: red;
+}
+
+td {
+  margin-right: 10px;
 }
 
 /*# sourceMappingURL=main.css.map */
