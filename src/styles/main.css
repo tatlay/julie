@@ -9,6 +9,10 @@
   form {
     font-size: 2rem;
   }
+
+  label {
+    font-size: 2rem;
+  }
 }
 h1 {
   color: white;
