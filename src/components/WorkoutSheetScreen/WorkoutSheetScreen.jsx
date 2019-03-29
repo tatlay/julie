@@ -20,7 +20,6 @@ const WorkoutSheetScreen = ({ exerciseFocus, workoutTimeMins, restTime }) => {
                     null
                 }
 
-
             <TimeDisplay time={workoutTimeMins} timeUnit={"Mins"}>Workout Time:</TimeDisplay>
             <TimeDisplay time={restTime} timeUnit={"Secs"}>Rest between sets is </TimeDisplay>
             

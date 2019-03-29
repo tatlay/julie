@@ -7,8 +7,6 @@ export const getExercisePlan = (data) => (dispatch, getState) => {
 
 	let mgroup = createExerciseArray(data);
 
-
-	console.log(data.goal);
 	axios.post("/workoutplans", {
 		categories: mgroup,
 		time: data.timeForWorkout,
@@ -18,7 +16,7 @@ export const getExercisePlan = (data) => (dispatch, getState) => {
 	}).then( response => {
 		dispatch(exerciseDetails(response.data))
 
-		history.push("/workout-sheet-screen");
+		history.push("/workout-sheet-screen")
 
 	}).catch( error => console.log(error))
 

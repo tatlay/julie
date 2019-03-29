@@ -9,13 +9,13 @@ export const exerciseDetails = ({workoutFocus, workoutGoal, workoutTime, restTim
 		targetReps,
 		Workout
 	}
-}
+};
 
 export const changeLoad = () => {
 	return {
 		type : "setChangeLoad"
 	}
-}
+};
 
 export const setUserName = (userName) => {
 	console.log(userName)
@@ -23,4 +23,4 @@ export const setUserName = (userName) => {
 		type : "setUserName",
 		userName,
 	}
-}
+};
