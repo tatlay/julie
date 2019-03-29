@@ -1,6 +1,9 @@
-export const exerciseDetails = ({restTime, sets, targetReps, Workout}) => {
+export const exerciseDetails = ({workoutFocus, workoutGoal, workoutTime, restTime, sets, targetReps, Workout}) => {
 	return {
 		type : "setExerciseDetails",
+		workoutFocus,
+    	workoutGoal,
+    	workoutTime,
 		restTime, 
 		sets,
 		targetReps,

@@ -2,7 +2,7 @@ import initial from "./initial";
 
 const setInitial = () => initial;
 
-const setExercise = (state, action) => ({...state, restTime : action.restTime, sets : action.sets, targetReps : action.targetReps, Workout : action.Workout, loaded: !state.loaded})
+const setExercise = (state, action) => ({...state, workoutFocus : action.workoutFocus, workoutGoal : action.workoutGoal, workoutTime : action.workoutTime, restTime : action.restTime, sets : action.sets, targetReps : action.targetReps, Workout : action.Workout, loaded: !state.loaded})
 
 const setChangeLoad = (state) => ({...state, loaded : !state.loaded})
 

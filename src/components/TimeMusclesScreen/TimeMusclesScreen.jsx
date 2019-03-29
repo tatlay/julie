@@ -20,7 +20,7 @@ class TimeMuscleScreen extends Component {
 			triceps : false,
 			shoulders : false,
 			legs : false,
-			timeForWorkout : 0,
+			timeForWorkout : "",
 			goal: "",
 		} 
 

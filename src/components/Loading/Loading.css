@@ -1,6 +1,8 @@
 .lds-heart {
     display: inline-block;
     position: relative;
+    top : 25vw;
+    left : 15vw;
     width: 64px;
     height: 64px;
     transform: rotate(45deg);
@@ -9,7 +11,9 @@
   .lds-heart div {
     top: 23px;
     left: 19px;
-    position: absolute;
+    position: relative;
+    top : 25vw;
+    left : 15vw;
     width: 26px;
     height: 26px;
     background: #FF3A33;
@@ -52,4 +56,5 @@
       transform: scale(0.9);
     }
   }
+  
   

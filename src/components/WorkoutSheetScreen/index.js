@@ -2,8 +2,8 @@ import { connect } from "react-redux";
 import WorkoutSheetScreen from "./WorkoutSheetScreen";
 
 const mapStateToProps = (state) => ({
-    exerciseFocus: state.exerciseFocus,
-    workoutTimeMins: state.workoutTimeMins,
+    exerciseFocus: state.workoutFocus,
+    workoutTimeMins: state.workoutTime,
     restTime: state.restTime,
 });
 
