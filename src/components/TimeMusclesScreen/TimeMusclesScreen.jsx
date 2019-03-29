@@ -32,7 +32,7 @@ class TimeMuscleScreen extends Component {
 	}//end of constructor
 
 	handleTimeChange(e) {
-		this.setState({ timeForWorkout : +e.currentTarget.value >= 0 ? +e.currentTarget.value : 0})
+		this.setState({ timeForWorkout : +e.currentTarget.value > 0 ? +e.currentTarget.value : +e.currentTarget.placeholder})
 
 	};
 
