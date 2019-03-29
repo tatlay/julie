@@ -48,9 +48,9 @@ class TableRow extends Component {
                         <td>{exercise}</td>
                         <td>{sets}</td>
                         <td>{targetReps}</td>
-                        <td><input type="number" value={exercise.completedReps} onChange={(e) => this.handleCompRepsChange(e,i)}/></td>
-                        <td><input type="number" value={exercise.weight} onChange={(e) => this.handleWeightChange(e,i)}/></td>
-                        <td><input checked={exercise.completed} type="checkbox" onChange={(e) => this.handleCheckboxChange(e,i)}/></td>
+                        <td><input disabled type="number" value={exercise.completedReps} onChange={(e) => this.handleCompRepsChange(e,i)}/></td>
+                        <td><input disabled type="number" value={exercise.weight} onChange={(e) => this.handleWeightChange(e,i)}/></td>
+                        <td><input disabled checked={exercise.completed} type="checkbox" onChange={(e) => this.handleCheckboxChange(e,i)}/></td>
                     </tr>
                 ))}
             </Fragment>
