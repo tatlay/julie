@@ -107,17 +107,11 @@ class TimeMuscleScreen extends Component {
 
 					<h1 className="timemusclescreen__title">Workout with Julie</h1>
 
-					<h3>Workout Time
+					<h3>Workout Time</h3>
 
-						<input className="timemusclescreen_mins" onChange={ this.handleTimeChange } type="number" name="time" id="time" placeholder="mins"/></h3>
-					
-					<form className="timemusclescreen__form">
+					<form>
 
-						<label className="timemusclescreen__endurance">Endurance</label>
-
-
-							<input className="timemusclescreen_mins" onChange={ this.handleTimeChange } type="number" name="time" id="time" value={this.state.timeForWorkout}/>
-						</div>
+							<input className="timemusclescreen_mins" onChange={ this.handleTimeChange } type="number" name="time" id="time" placeholder="mins" value={this.state.timeForWorkout}/>
 
 					<div className="timemusclescreen_divide"></div>	
 
