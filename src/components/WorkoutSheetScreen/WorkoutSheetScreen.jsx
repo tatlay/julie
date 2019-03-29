@@ -21,8 +21,8 @@ const WorkoutSheetScreen = ({ exerciseFocus, workoutTimeMins, restTime }) => {
                 }
 
 
-            <TimeDisplay time={workoutTimeMins}>Workout Time:</TimeDisplay>
-            <TimeDisplay time={restTime}>Rest between sets is </TimeDisplay>
+            <TimeDisplay time={workoutTimeMins} timeUnit={"Mins"}>Workout Time:</TimeDisplay>
+            <TimeDisplay time={restTime} timeUnit={"Secs"}>Rest between sets is </TimeDisplay>
             
             <div className="timemusclescreen_divide"></div>
             <Table />
