@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export default axios.create({
-	baseURL: "https://www.boredapi.com/api/",
+	baseURL: "https://d91af856.ngrok.io/api/",
 	Headers: {"Accept": "application/json"} 
 })
 

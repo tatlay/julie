@@ -8,23 +8,20 @@ export const getExercisePlan = (data) => (dispatch, getState) => {
 	
 	let mgroup = createExerciseArray(data);
 
-	console.log(mgroup);
-	console.log(data.timeForWorkout);
-	console.log(data.goal);
+	console.log(data);
 
-	/*	
 
-	// code below to be activated on API functionality
-	axios.post("/workout", {
+	axios.post("/workoutplans", {
 		categories: mgroup,
 		timeForWorkout: data.timeForWorkout,
 		goal: data.goal,
-	})
-		.then( response => exerciseDetails(dummyResponse)) //dispatching stateAction here.
-		.catch( error => console.log(error)) */
-		setTimeout(() => {
-			dispatch(exerciseDetails(dummyResponse));
-				history.push("/workout-sheet-screen");
-		}, 3000);
+	
+		
+	}).then( response => {
+
+		dispatch(exerciseDetails(data))
+		history.push("/workout-sheet-screen");
+
+	}).catch( error => console.log(error)) 
 
 }
