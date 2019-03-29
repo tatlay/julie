@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 
 class SignInScreen extends Component {
 
@@ -46,6 +45,6 @@ class SignInScreen extends Component {
 				</React.Fragment>
 		)
 	}//end of render
-}		
+}
 
 export default SignInScreen;
