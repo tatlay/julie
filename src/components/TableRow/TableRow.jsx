@@ -45,7 +45,7 @@ class TableRow extends Component {
             <Fragment>
                 {Workout.map((exercise, i) => (
                     <tr key={i}>
-                        <td>{exercise.exerciseName}</td>
+                        <td>{exercise}</td>
                         <td>{sets}</td>
                         <td>{targetReps}</td>
                         <td><input type="number" value={exercise.completedReps} onChange={(e) => this.handleCompRepsChange(e,i)}/></td>

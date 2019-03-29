@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export default axios.create({
-	baseURL: "https://d91af856.ngrok.io/api/",
+	baseURL: "http://ec2-18-130-55-71.eu-west-2.compute.amazonaws.com/api",
 	Headers: {"Accept": "application/json"} 
 })
 
